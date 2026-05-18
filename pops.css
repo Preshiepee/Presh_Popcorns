@@ -1,0 +1,211 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    color: #333;
+    background-color: #f9f9f9;
+    background-image: url('Preshpops.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Navigation */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4a3728;
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #555;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ff9f43;
+}
+
+/* Hero Section */
+.hero {
+    height: 70vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('hero-bg.jpg') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    padding: 12px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 25px;
+    margin: 10px;
+    display: inline-block;
+    transition: transform 0.2s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.btn-popcorn { background-color: #ff9f43; color: white; }
+.btn-perfumes { background-color: #8e44ad; color: white; }
+
+/* Business Sections */
+.business-section {
+    padding: 60px 10%;
+    text-align: center;
+}
+
+.popcorn-bg { background-color: #fffaf0; }
+.perfume-bg { background-color: #faf5ff; }
+
+.business-section h2 {
+    font-size: 36px;
+    margin-bottom: 5px;
+}
+
+.popcorn-bg h2 { color: #d35400; }
+.perfume-bg h2 { color: #6c5ce7; }
+
+.tagline {
+    font-style: italic;
+    color: #777;
+    margin-bottom: 40px;
+}
+
+/* Product Cards Grid */
+.product-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 280px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: translateY 0.3s;
+    padding-bottom: 20px;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-img {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-color: #eee; /* Fallback */
+}
+
+.product-card h3 {
+    margin: 15px 0 10px;
+    font-size: 20px;
+}
+
+.product-card p {
+    padding: 0 15px;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.order-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.order-btn:hover {
+    background-color: #555;
+}
+
+/* Contact / Form Styles */
+#contact {
+    padding: 60px 10%;
+    background: #fff;
+    text-align: center;
+}
+
+#orderForm {
+    max-width: 500px;
+    margin: 30px auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#orderForm input, #orderForm textarea {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.submit-btn {
+    background-color: #25D366; /* WhatsApp Green */
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #128C7E;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+    font-size: 14px;
+}
