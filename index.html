@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gourmet Treats & Luxury Fragrances</title>
+    <link rel="stylesheet" href="pops.css">
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header>
+        <div class="logo">MyBrand Hub</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#popcorn">Popcorn</a>
+            <a href="#perfumes">Fragrances</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>One Stop for Your Senses</h1>
+            <p>Indulge in crunchiest gourmet popcorn and discover your signature oil perfume.</p>
+            <div class="hero-buttons">
+                <a href="#popcorn" class="btn btn-popcorn">Shop Popcorn</a>
+                <a href="#perfumes" class="btn btn-perfumes">Shop Perfumes</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popcorn Section -->
+    <section id="popcorn" class="business-section popcorn-bg">
+        <h2>Presh Popcorn</h2>
+        <p class="tagline">Fresh, crunchy, and bursting with flavor!</p>
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="product-img" style="background-image: url('Preshpops.jpeg');"></div>
+                <h3>Classic Sweet & Salty</h3>
+                <p>The perfect balance for your cravings.</p>
+                <button class="order-btn" onclick="orderProduct('Classic Popcorn')">Order Now</button>
+            </div>
+            <div class="product-card">
+                <div class="product-img" style="background-image: url('Preshpops.jpeg');"></div>
+                <h3>Mega Caramel Crunch</h3>
+                <p>Rich, buttery caramel coating.</p>
+                <button class="order-btn" onclick="orderProduct('Caramel Popcorn')">Order Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Perfume Section -->
+    <section id="perfumes" class="business-section perfume-bg">
+        <h2>Luxury Oil Perfumes</h2>
+        <p class="tagline">Long-lasting, premium scents that linger beautifully.</p>
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="product-img" style="background-image: url('perfumepics.png');"></div>
+                <h3>Signature Scent</h3>
+                <p>Bold, sophisticated, and memorable.</p>
+                <button class="order-btn" onclick="orderProduct('Signature Perfume Oil')">Order Now</button>
+            </div>
+            <div class="product-card">
+                <div class="product-img" style="background-image: url('perfumepics.png');"></div>
+                <h3>Sweet Oud</h3>
+                <p>Warm, rich notes with a touch of sweetness.</p>
+                <button class="order-btn" onclick="orderProduct('Sweet Oud Oil')">Order Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / Order Section -->
+    <section id="contact">
+        <h2>Place Your Order</h2>
+        <p>Chat directly with us to finalize your custom order!</p>
+        <form id="orderForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="text" id="selectedProduct" placeholder="Selected Product" readonly>
+            <textarea id="details" placeholder="Any special instructions? (e.g., quantity, delivery location)" rows="4"></textarea>
+            <button type="submit" class="submit-btn">Send to WhatsApp</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Your Brand Hub. All Rights Reserved.</p>
+    </footer>
+
+    <script src="pops.js"></script>
+</body>
+</html>
